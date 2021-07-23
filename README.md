@@ -128,7 +128,12 @@ is the true SSB of the system.
 #### Short-term discrepancies
 
 We assume that short term discrepancies follow a stationary *AR*(1)
-process, writing So we need to elicit priors on *R*<sub>*i*</sub> and
+process, writing 
+
+*z<sub>i*</sub><sup>(*t*)</sup> ~ *N(R<sub>i</sub>z<sub>i</sub><sup>(t-1)</sup>,* *Λ*<sub>*i*</sub>).
+
+
+So we need to elicit priors on *R*<sub>*i*</sub> and
 *Λ*<sub>*i*</sub>. (Note that the above holds for *t* ≥ 1 and we should
 specify the initial distribution *z*<sub>*i*</sub><sup>(0)</sup> - in
 our implementation this is simply drawn from the stationary distribution
